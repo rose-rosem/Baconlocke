@@ -1,0 +1,119 @@
+@-webkit-keyframes firstPage {
+    from{top: 120%}
+    to{top: 25%}
+}
+
+@keyframes firstPage {
+    from{top: -1200px}
+    to{top: 25%}
+}
+
+@-webkit-keyframes firstPage2 {
+    from{top: -2500px}
+    to{top: 45%}
+}
+
+@keyframes firstPage2 {
+    from{top: -2500px}
+    to{top: 45%}
+}
+
+@-webkit-keyframes firstPage3 {
+    from{opacity: 0}
+    to{opacity: 1}
+}
+
+@keyframes firstPage3 {
+    from{opacity: 0}
+    to{opacity: 1}
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        /*-webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);*/
+        -webkit-transform: translate3d(0, 50px, 0);
+        transform: translate3d(0, 50px, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeInUpBig {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 2000px, 0);
+        transform: translate3d(0, 2000px, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInUpBig {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 2000px, 0);
+        transform: translate3d(0, 2000px, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInUpBig {
+    -webkit-animation-name: fadeInUpBig;
+    animation-name: fadeInUpBig;
+}
+
+@-webkit-keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.fadeOut {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+}
+
+.animate-box {
+    opacity: 0;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}

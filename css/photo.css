@@ -1,0 +1,94 @@
+/*photo start*/
+.photo{
+    position: relative;
+    width: 100vw;
+    height: 708px;
+    /*overflow:scroll;*/
+}
+.photo .pleft{
+    /*position: absolute;*/
+    /*width: 35%;*/
+    /*top:0;*/
+    /*left: 0;*/
+    height: 100%;
+    z-index: 1;
+    color: #777777;
+    background-color:#D6E9FC ;
+}
+.pleft .pcontent{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-top: -134px;
+    margin-left: -90px;
+}
+.pleft .c-text{
+    font-size: 40px;
+    color: #444 ;
+}
+
+.pleft .c-ol {
+    font-size: 25px;
+    color: #555;
+    padding-top: 20px;
+    margin-left: 10px;
+}
+.c-ol li{
+    padding-bottom: 10px;
+}
+.c-ol li:hover{
+    color: #FA7E0A;
+    cursor:pointer;
+}
+.photo .pright{
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    /*position:absolute;*/
+    /*width:65%;*/
+    /*top:0;*/
+    /*left:35%;*/
+    /*z-index: 1;*/
+}
+.photo .pright .video-player{
+    top:50%;
+}
+.pright-img{
+    height: 100%;
+    /*overflow: scroll;*/
+}
+.pright-img .item {
+    position: relative;
+    /*width: 50%;*/
+    float: left;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.pright-img .item:after{
+    content: '';
+    text-align: center;
+    width: 100%;
+    float: left;
+    height: 100%;
+    background:rgba(250,126,10,.4);
+    opacity:0;
+}
+.pright-img .item:before{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-left: -82px;
+    margin-top: -22px;
+    content: 'Learning scene';
+    font-size: 24px;
+    opacity:0;
+    transition: opacity 1s ;
+}
+.pright-img .item:hover:after{
+    opacity: 1;
+}
+.pright-img .item:hover:before{
+    opacity: 1;
+}
