@@ -20,50 +20,16 @@
     <!--<script src="js/counTo.js"></script>-->
     <script type="text/javascript" src="js/jquery.countUp.js"></script>
 
-    <style>
-        .video-box{
-            width: 100vw;
-            height: 100vh;
-            position: fixed;
-            top:0;
-            left: 0;
-            float: left;
-            z-index: 9999;
-            background-color: #333!important;
-            display: none;
-        }
-        .video-box video{
-            width:35%;
-            height:40%;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            margin-left: -275px;
-            margin-top: -161px;
-        }
-        .video-box i{
-            font-size: 40px;
-            position: absolute;
-            right: 20px;
-            top:20px;
-            color: #5ab645;
-            cursor: pointer;
-        }
-
-        .video-box i:hover{
-            color: #c00;
-        }
-    </style>
-
 </head>
 
 <body>
 <div class="container-fluid">
     <!--video start-->
     <div class="video-box">
-        <!--<a href="javascript:;" class="close-a" style="color: #FFFFFF">关闭</a>-->
-        <div class="close-i">
-            <i class="glyphicon glyphicon-off" title="关闭视频"></i>
+        <div class="video-inner">
+            <div class="close-i">
+                <i class="glyphicon glyphicon-off" title="关闭视频"></i>
+            </div>
         </div>
     </div>
     
@@ -294,11 +260,11 @@
 <script>
 
     $(".icon-play2").click(function(){
-        $(".video-box").append("<video src='video/VideoJoiner161123142936.mp4' controls='controls'>your browser does not support the video tag</video>");
+        $(".video-box .video-inner").append("<video src='video/VideoJoiner161123142936.mp4' controls='controls'>your browser does not support the video tag</video>");
         $(".video-box").show();
     });
-    $(".close-i").click(function(){
-        $(".video-box video").remove();
+    $(".video-inner .close-i").click(function(){
+        $(".video-inner video").remove();
         $('.video-box').hide();
     });
     $(window).resize(function(){
