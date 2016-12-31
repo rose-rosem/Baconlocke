@@ -19,6 +19,14 @@
     font-weight: normal;
     font-style: normal;
 }
+@media screen and (max-width: 450px) {
+    .page-banner{
+        background-image: url("../photo/c-9.jpg") !important;
+    }
+    .page-count {
+        background-image: url("../images/1-sm.jpg") !important;
+    }
+}
 .full-page{
     overflow-x: hidden;
     /*background: #3a3c48 url("../images/video-bg.png");*/
@@ -40,7 +48,7 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    background: url("../images/indexbanner.jpg") no-repeat ;
+    background-image: url("../images/indexbanner.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
@@ -473,9 +481,9 @@ margin-top: 50%;
 }
 
 .page-count{
-    background: url("../images/1.jpg" ) no-repeat;
+    background-image: url("../images/1.jpg" );
     padding: 10em 0;
-    /*background-size: cover;*/
+    background-size: cover;
     background-attachment: fixed;
     background-position:bottom center;
     animation-duration: 1s;
@@ -655,4 +663,41 @@ footer{
 
 .container-fluid{
     padding: 0 !important;
+}
+
+.video-box{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 9999;
+    background-color: #333!important;
+    display: none;
+}
+.video-inner{
+    width: 480px;
+    height: 300px;
+    overflow: hidden;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    margin-top: -135px;
+    margin-left: -240px;
+}
+.video-inner video{
+    width: 100%;
+}
+.video-inner .close-i{
+    font-size: 30px;
+    position: absolute;
+    right: 0px;
+    top:0px;
+    color: #5ab645;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.video-inner .close-i:hover{
+    color: #c00;
 }
