@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/new.js"></script>
+    <style>
+        body {margin:0; padding:0; font:16px/1 arial,"Microsoft yahei";background-color: transparent;overflow: hidden;}
+        div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{padding:0; margin:0;}
+        ol,ul {list-style:none;}
+        li{list-style-type:none;}
+        a:link,a:visited {
+            color:#000;
+            text-decoration: none;
+        }
+        .active{
+            animation: rotate 3s ease-in-out infinite;
+            z-index: 9999;
+        }
+        @keyframes rotate {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.3);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        .ul-box{
+            position:absolute;
+            width: 240px;
+            height: 50px;
+            top: 0;
+            left: 40px;
+            overflow: hidden;
+            margin-top: 25px;
+            margin-left: 10px;
+            z-index: 9999;
+        }
+        ul{
+            position:absolute;
+            white-space:nowrap;
+            top: 0;
+            color: #444;
+            font-size: 17px;
+        }
+        ul li{
+            display: inline;
+            height: 50px;
+            line-height: 30px;
+            margin-right: 15px;
+        }
+        .box{
+            position: relative;
+        }
+        .row-one,.row-two,.row-three,.row-five,.row-four,.row-six{
+            position: absolute;
+            margin-top: 20px;
+        }
+        .row-one{
+            top: 0px;
+            left: 30px;
+        }
+        .row-two{
+            top: 0px;
+            left: 400px;
+        }
+        .row-three{
+            top: 0px;
+            left: 800px;
+        }
+        .inner-content{
+            position: relative;
+            margin: 0 auto;
+            /*width: 400px;*/
+            /*overflow: hidden;*/
+        }
+        .inner-content img{
+            height: 50px;
+            width: auto;
+        }
+        .inner-content .font_inner a{
+            color: #444;
+        }
+        .inner-content a:hover{
+            color: #FA9101;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <div class="row-one">
+        <div class="inner-content">
+            <img src="images/1.png">
+            <div class="ul-box">
+                <ul class="font_inner">
+                    <li>
+                        <a href="###">全行业唯一：原笔迹书写体验</a>
+                    </li>
+                    <li>
+                        <a href="###">全行业唯一：解答富文本音频</a>
+                    </li>
+                    <li>
+                        <a href="###">全行业唯一：在线离线双模式</a>
+                    </li>
+                    <li>
+                        <a href="###">全行业唯一：做题过程全纪录</a>
+                    </li>
+                    <li>
+                        <a href="###">全行业第一：解题导向微视频</a>
+                    </li>
+                    <li>
+                        <a href="###">全行业第一：主动式错题规划</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row-two active">
+        <div class="inner-content">
+            <img src="images/1.png">
+            <div class="ul-box">
+                <ul class="font_inner1">
+                    <li>
+                        <a href="###">全行业唯一：解答富文本音频</a>
+                    </li>
+                    <li>
+                        <a href="###">全行业唯一：在线离线双模式</a>
+                    </li>
+                    <li>
+                        <a href="###">全行业唯一：做题过程全纪录</a>
+                    </li>
+                    <li>
+                        <a href="###">全行业第一：解题导向微视频</a>
+                    </li>
+                    <li>
+                        <a href="###">全行业第一：主动式错题规划</a>
+                    </li>
+                    <li>
+                        <a href="###">全行业唯一：原笔迹书写体验</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row-three">
+        <div class="inner-content">
+            <img src="images/1.png">
+            <div class="ul-box">
+                <ul class="font_inner2">
+                    <li>
+                        <a href="###">全行业唯一：在线离线双模式</a>
+                    </li>
+                    <li>
+                        <a href="###">全行业唯一：做题过程全纪录</a>
+                    </li>
+                    <li>
+                        <a href="###">全行业第一：解题导向微视频</a>
+                    </li>
+                    <li>
+                        <a href="###">全行业第一：主动式错题规划</a>
+                    </li>
+                    <li>
+                        <a href="###">全行业唯一：原笔迹书写体验</a>
+                    </li>
+                    <li>
+                        <a href="###">全行业唯一：解答富文本音频</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--<div class="row-four">-->
+        <!--<div class="inner-content container">-->
+            <!--<img src="images/1.png">-->
+            <!--<ul class="font_inner3">-->
+                <!--<li>-->
+                    <!--<a href="###">全行业唯一：做题过程全纪录</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="###">全行业第一：解题导向微视频</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="###">全行业第一：主动式错题规划</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="###">全行业唯一：原笔迹书写体验</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="###">全行业唯一：解答富文本+音频</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="###">全行业唯一：在线离线双模式</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="row-five">-->
+        <!--<div class="inner-content container">-->
+            <!--<img src="images/1.png">-->
+            <!--<ul class="font_inner4">-->
+                <!--<li>-->
+                    <!--<a href="###">全行业第一：解题导向微视频</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="###">全行业第一：主动式错题规划</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="###">全行业唯一：原笔迹书写体验</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="###">全行业唯一：解答富文本+音频</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="###">全行业唯一：在线离线双模式</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="###">全行业唯一：做题过程全纪录</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="row-six">-->
+        <!--<div class="inner-content container">-->
+            <!--<img src="images/1.png">-->
+            <!--<ul class="font_inner5">-->
+                <!--<li>-->
+                    <!--<a href="###">全行业第一：主动式错题规划</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="###">全行业唯一：原笔迹书写体验</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="###">全行业唯一：解答富文本+音频</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="###">全行业唯一：在线离线双模式</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="###">全行业唯一：做题过程全纪录</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="###">全行业第一：解题导向微视频</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</div>-->
+</div>
+</body>
+</html>

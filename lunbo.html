@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小米轮播</title>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script>
+        $(function () {
+            var dtime;
+            var nowindex = 0;
+            var length = $(".js-ul li").length;
+            $(".js-ul").children().eq(nowindex).first().show().siblings().hide();
+            function animate(index) {
+                $(".js-ul").children().eq(index).fadeIn(2000).siblings().fadeOut(2000);
+                $(".dots").children().eq(index).children().addClass("active");
+                $(".dots").children().eq(index).siblings().children().removeClass("active");
+                nowindex = index;
+            };
+
+            function targetPlay(Zindex) {
+                var index;
+                (Zindex == length-1 ) ? index = 0 : index = Zindex+1;
+                animate(index);
+            };
+
+            function paly() {
+                dtime = setInterval(function () {
+                    targetPlay(nowindex);
+                },2000);
+            };
+            function stop() {
+                clearInterval(dtime);
+            };
+            $(".dots").children().click(function() {
+                stop();
+                var index = $(this).index();
+                animate(index);
+                paly();
+            });
+            function prev() {
+                stop();
+                var index;
+                (nowindex == 0 ) ? index = length - 1 : index = nowindex - 1;
+                animate(index);
+                paly();
+            };
+            function next() {
+                stop();
+                var index;
+                (nowindex == length-1 ) ? index = 0 : index = nowindex + 1;
+                animate(index);
+                paly();
+            };
+
+            $(".prev").click(function () {
+                prev();
+            });
+
+            $(".next").click(function () {
+                next();
+            });
+
+            paly();
+
+
+        });
+    </script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .imgbox{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+        .content{
+            position: absolute;
+            top:50%;
+            left:50%;
+            width: 1226px;
+            height: 460px;
+            margin-left: -613px;
+            margin-top: -230px;
+        }
+        .js-ul{
+            width: auto;
+            height: auto;
+            position: relative;
+        }
+        .js-ul li{
+            position: absolute;
+        }
+        .prev{
+            position: absolute;
+            top:50%;
+            left: 0;
+            display: block;
+            width: 41px;
+            height: 69px;
+            background: url("images/icon-slides.png") no-repeat -84px center;
+            z-index: 10;
+        }
+        .prev:hover{
+            background: url("images/icon-slides.png") no-repeat 0px center;
+        }
+        .next{
+            position: absolute;
+            top:50%;
+            right: 0;
+            display: block;
+            width: 41px;
+            height: 69px;
+            background: url("images/icon-slides.png") no-repeat -125px center;
+        }
+        .next:hover{
+            background: url("images/icon-slides.png") no-repeat -42px center;
+        }
+        .points{
+            position: absolute;
+            bottom: 20px;
+            right:20%;
+        }
+        .dots li{
+            float: left;
+        }
+        .dots .dot{
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color:#fff ;
+            border: 2px solid #333;
+            border-radius:50% ;
+            margin-left: 20px;
+        }
+        .dots .active{
+            box-shadow: -2px 2px 10px #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="imgbox">
+        <div class="content">
+            <ul class="js-ul">
+                <li>
+                    <img src="images/01.jpg" alt="01" title="小米手机">
+                </li>
+                <li>
+                    <img src="images/02.jpg" alt="02" title="小米手机">
+                </li>
+                <li>
+                    <img src="images/03.jpg" alt="03" title="小米手机">
+                </li>
+                <li>
+                    <img src="images/04.jpg" alt="04" title="小米手机">
+                </li>
+            </ul>
+            <div class="leftandright">
+                <a href="javascript:;" class="prev"></a>
+                <a href="javascript:;" class="next"></a>
+            </div>
+            <div class="points">
+                <ul class="dots">
+                    <li><span class="dot active"></span></li>
+                    <li><spqn class="dot"></spqn></li>
+                    <li><span class="dot"></span></li>
+                    <lil><spqn class="dot"></spqn></lil>
+                </ul>
+            </div>
+        </div>
+
+    </div>>
+</body>
+</html>
