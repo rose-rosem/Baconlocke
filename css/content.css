@@ -1,0 +1,383 @@
+.plkj_logo {
+	background: #fff;
+	height: 80px;
+	width: 100%;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+}
+
+.logo_content {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+header {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.logo_content {
+	width: 1200px;
+	height: 100%;
+}
+
+header img {
+	width: 100px;
+	height: 50px;
+	margin: 20px 0 0 23px;
+	float: left;
+}
+
+.nav_1 {
+	text-align: center;
+	z-index: 2;
+	position: relative;
+	height: 80px;
+	zoom: 1;
+	list-style: none;
+	float: left;
+	margin-left: 100px;
+}
+
+.nav_1 li {
+	display: inline-block;
+	float: left;
+}
+
+.nav_1 li a {
+	height: 76px;
+	display: block;
+	line-height: 80px;
+	padding: 0 30px;
+	font-size: 14px;
+	border-bottom: 4px solid #fff;
+}
+
+.nav_1 li a:hover {
+	border-bottom-color: red;
+	transition: all 3s ease;
+}
+
+.fullpage {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	touch-action: none;
+	transform: translate3d(0px, 0px, 0px);
+	transition: all 700ms ease;
+}
+
+.banner_a{
+	height: 100%;
+}
+
+.ban1_0 {
+	height: 100%;
+	width: 100%;
+	color: #fff;
+	background: linear-gradient(to top right, #38c187, #1dc1b0);
+	position: relative;
+}
+
+.plkj_sah1 {
+	opacity: 1;
+	transform: scale(1, 1);
+	transition-delay: 0.2s;
+	transition: all 0.7s;
+	font-size: 70px;
+	font-weight: normal;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	margin-left: -376px;
+	line-height: 70px;
+}
+
+.width_out {
+	overflow: hidden;
+	color: #fefe00;
+	font-weight: bold;
+	font-family: "华文新魏";
+	font-size: 100px;
+	line-height: 70px;
+}
+
+.teac {
+	overflow: hidden;
+	color: #fff;
+	font-weight: bold;
+	font-family: "华文新魏";
+	font-size: 55px;
+	line-height: 70px;
+}
+
+.plkj_Name {
+	transition: all 0.5s;
+	opacity: 1;
+	transition-delay: 0.6s;
+	font-size: 35px;
+	text-align: center;
+	margin-top: 100px;
+	font-weight: bold;
+	font-family: "楷体";
+}
+
+.plkj_sa2 {
+	transition: all 0.5s;
+	opacity: 1;
+	margin-left: -460px ;
+	transition-delay: 1.2s;
+	font-size: 18px;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	text-align: center;
+	z-index: 2;
+	color: #fff;
+}
+
+.yewu_icon {
+	background-position: 30px -284px;
+	box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.2);
+	width: 130px;
+	height: 130px;
+	border-radius: 100%;
+	background-color: #fff;
+	display: block;
+	margin-bottom: 10px;
+	background-image: url(../images/home-icon.png);
+	background-repeat: no-repeat;
+}
+
+.yewu_icon b {
+	display: none;
+}
+
+.plkj_sa2:hover i b{
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+	color: #99ff99;
+	display: block;
+	background: #000;
+	filter: alpha(opacity=80);
+	background: rgba(0, 0, 0, 0.7);
+	display: block;
+	width: 130px;
+	height: 130px;
+	line-height: 130px;
+	border-radius: 100%;  
+
+}
+
+@keyframes bigsmall{
+	0%{transform: scale(0.9, 0.9);}
+	30%{transform: scale(1.2, 1.2);}
+	100%{transform: scale(0.9, 0.9);}
+}
+.plkj_sa2:hover i{
+	animation:bigsmall 1.2s infinite;
+}
+
+.plkj_sa3 {
+	transition: all 0.5s;
+	opacity: 1;
+	margin-left: -205px;
+	transition-delay: 1.2s;
+	font-size: 18px;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	text-align: center;
+	z-index: 2;
+	color: #fff;
+}
+
+.jiaoshi_icon {
+	background-position: 25px -425px;
+	box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.2);
+	width: 130px;
+	height: 130px;
+	border-radius: 100%;
+	background-color: #fff;
+	display: block;
+	margin-bottom: 10px;
+	background-image: url(../images/home-icon.png);
+	background-repeat: no-repeat;
+}
+
+.jiaoshi_icon b {
+	display: none;
+}
+
+.plkj_sa3:hover i{
+	animation:bigsmall 1.2s infinite;
+}
+
+.plkj_sa3:hover i b{
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+	color: #99ff99;
+	display: block;
+	background: #000;
+	filter: alpha(opacity=80);
+	background: rgba(0, 0, 0, 0.7);
+	display: block;
+	width: 130px;
+	height: 130px;
+	line-height: 130px;
+	border-radius: 100%;  
+
+}
+
+
+.plkj_sa4 {
+	transition: all 0.5s;
+	opacity: 1;
+	margin-left: 50px;
+	transition-delay: 1.2s;
+	font-size: 18px;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	text-align: center;
+	z-index: 2;
+	color: #fff;
+}
+
+.jiaoyan_icon {
+	background-position: 20px -570px;
+	box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.2);
+	width: 130px;
+	height: 130px;
+	border-radius: 100%;
+	background-color: #fff;
+	display: block;
+	margin-bottom: 10px;
+	background-image: url(../images/home-icon.png);
+	background-repeat: no-repeat;
+}
+
+.jiaoyan_icon b {
+	display: none;
+}
+
+.plkj_sa4:hover i{
+	animation:bigsmall 1.2s infinite;
+}
+
+.plkj_sa4:hover i b{
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+	color: #99ff99;
+	display: block;
+	background: #000;
+	filter: alpha(opacity=80);
+	background: rgba(0, 0, 0, 0.7);
+	display: block;
+	width: 130px;
+	height: 130px;
+	line-height: 130px;
+	border-radius: 100%;  
+
+}
+
+.plkj_sa5 {
+	transition: all 0.5s;
+	opacity: 1;
+	margin-left: 300px;
+	transition-delay: 1.2s;
+	font-size: 18px;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	text-align: center;
+	z-index: 2;
+	color: #fff;
+}
+
+.xueyuan_icon {
+	background-position: 27px -145px;
+	box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.2);
+	width: 130px;
+	height: 130px;
+	border-radius: 100%;
+	background-color: #fff;
+	display: block;
+	margin-bottom: 10px;
+	background-image: url(../images/home-icon.png);
+	background-repeat: no-repeat;
+}
+
+.xueyuan_icon b {
+	display: none;
+}
+
+.plkj_sa5:hover i{
+	animation:bigsmall 1.2s infinite;
+}
+
+.plkj_sa5:hover i b{
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+	color: #99ff99;
+	display: block;
+	background: #000;
+	filter: alpha(opacity=80);
+	background: rgba(0, 0, 0, 0.7);
+	display: block;
+	width: 130px;
+	height: 130px;
+	line-height: 130px;
+	border-radius: 100%;  
+
+}
+
+.plkj_sa6,.plkj_sa7,.plkj_sa8{
+	position: absolute;
+	height: 75%;
+	background: #fff;
+	z-index: 1;
+	opacity: 0.2;
+	transform: skew(-35deg,0deg);
+}
+
+.plkj_sa6{
+	top: 0;
+	right: 160px;
+	width: 40px;
+}
+
+.plkj_sa7{
+	height: 100%;
+	width: 350px;
+	right: 300px;
+}
+.plkj_sa8{
+	bottom: 0;
+	right: 750px;
+	width: 40px;
+}
+
+.nav_1 a:hover{
+	color: #000000;
+}
+
+
+.find-footer{
+    position:absolute;
+    bottom:40px;
+    width:100%;
+    z-index:9999999;
+}
+
+
+.footer-layout{
+    width:990px;
+    margin:0 auto;
+    height:80px;
+}
+
+.copyright{
+    color:#ccc;
+    text-align:center;
+    font-size:12px;
+}
