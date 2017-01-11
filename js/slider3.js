@@ -147,7 +147,7 @@ var Tslider = function() {
         init : function() {
             // create instances of sliders here
             // parameters : HTMLcontainer name, speed (2 fast - 20 slow), Horizontal ratio, vertical text ratio, opacity
-            this.s1 = new TSlider("tslider", 12, 1.84/3.65, 1/3, 70);
+            this.s1 = new TSlider("tslider", 12, 1.84/3.9, 1/3, 70);
             setInterval("Tslider.s1.run();", 16);
         }
     }
