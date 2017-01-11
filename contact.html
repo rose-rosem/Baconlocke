@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>联系我们</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="HandheldFriendly" content="true">
+		<meta name="MobileOptimized" content="320">
+		<meta name="screen-orientation" content="portrait">
+		<meta name="x5-orientation" content="portrait">
+		<meta name="full-screen" content="no">
+		<meta name="x5-fullscreen" content="true">
+		<meta name="x5-page-mode" content="app">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<link href="icon/icon.ico" rel="shortcut icon" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link rel="stylesheet" type="text/css" href="css/oneplus.css">
+		<link rel="stylesheet" type="text/css" href="css/oneplus3.css">
+		<link rel="stylesheet" type="text/css" href="css/oneplus4.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/nav.css" />
+		<script src="js/oneplus.js"></script>
+		<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			document.documentElement.className += op.isMobile ? ' mobile ' : ' pc ';
+		</script>
+		<script>
+			window.op = window.op || {};
+			op.util.onLogin = function(callback) {
+				if(op.util.isLogin()) {
+					callback && callback()
+				} else {
+					if(!Modernizr.input.placeholder) {
+						location.href = op.URL.account.loginPage + "?jump=" + encodeURIComponent(location.href);
+						return;
+					}
+					if(op.isMobile) {
+						location.href = op.URL.account.loginPage + "?jump=" + encodeURIComponent(location.href);
+					} else {
+						$("#op-content .op-top-header .i-user").trigger('click', callback || undefined);
+					}
+				}
+			};
+			$(function() {
+				if(!Modernizr.input.placeholder) {
+					if(!op.util.isLogin()) {
+						$("#op-content .op-top-header .i-user").off("click").on("click", function() {
+							location.href = op.URL.account.loginPage + "?jump=" + encodeURIComponent(location.href);
+						});
+					}
+				}
+			});
+		</script>
+		<script type="application/x-javascript">
+			addEventListener("load", function() {
+				setTimeout(hideURLbar, 0);
+			}, false);
+
+			function hideURLbar() {
+				window.scrollTo(0, 1);
+			}
+		</script>
+		<script>
+			function cs() {
+				alert("谢谢你的反馈");
+			}
+		</script>
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event) {
+					event.preventDefault();
+					$('html,body').animate({
+						scrollTop: $(this.hash).offset().top
+					}, 1000);
+				});
+			});
+		</script>
+		<!-- //end-smoth-scrolling -->
+		<script src="js/menu_jquery.js"></script>
+	</head>
+
+	<body>
+		<div id="op-wrap">
+			<div id="op-aside"></div>
+			<div id="op-wrap-mask"></div>
+			<div id="op-content">
+				<div class="navbar-example">
+					<div class="navbar navbar-default navbar-fixed-top">
+						<div class="container">
+							<a href="" class="brand">培洛科技</a>
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".home">
+                                    		<span class="icon-bar"></span>
+                                    		<span class="icon-bar"></span>
+                                    		<span class="icon-bar"></span>
+                                		</button>
+							</div>
+							<div class="home navbar-collapse collapse">
+								<ul class="nav navbar-nav">
+									<li>
+										<a href="index.html" target="_blank">首页</a>
+									</li>
+									<!--<li><a href="product.aspx" class="products">产品</a></li>-->
+									<li>
+										<a href="anli.html" target="_blank">案例</a>
+									</li>
+									<li>
+										<a href="text.html" target="_blank">演示</a>
+									</li>
+									<li>
+										<a href="download.html" target="_blank">下载</a>
+									</li>
+									<li>
+										<a href="vip.html" target="_blank">会员</a>
+									</li>
+									<li>
+										<a href="help.html" target="_blank">帮助</a>
+									</li>
+									<li>
+										<a href="contact.html" class="index">联系我们</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--nav end-->
+				<!--banner start-->
+				<div class="banner banner-blog" style="height:400px; padding-bottom:0;">
+					<img src="images/contact_PL.png" style="position:absolute; top:17%; left:20%;" />
+				</div>
+
+				<div class="contact">
+					<div class="container">
+						<div class="contact-top">
+							<h2></h2>
+							<!--<p>与我们取得联系</p>-->
+						</div>
+						<div class="map">
+							<h1 style="font-size:30px;">江苏省无锡市惠山区钱桥镇育才路27号</h1>
+							<iframe src="https://map.baidu.com"></iframe>
+						</div>
+						<div class="contact-infom">
+							<h4></h4>
+							<!--<p>3年的方法论研究 3年的软件设计调试 40人的课程制作团队 300名学生的内部测试 500000的小学精品题库 1000000的累积学习数据 10000000的资本方融资支持
+					</p>-->
+						</div>
+						<div class="contact-form">
+							<asp:TextBox ID="TextBox1" placeholder="姓名" runat="server" CssClass="contact-form"></asp:TextBox>
+							<asp:TextBox ID="TextBox2" placeholder="电话" runat="server" CssClass="contact-form"></asp:TextBox>
+							<asp:TextBox ID="TextBox3" placeholder="邮箱" runat="server" CssClass="contact-form"></asp:TextBox>
+							<asp:TextBox ID="TextBox4" placeholder="留言内容" runat="server" CssClass="textarea_aaaa" Style="width: 1104px"></asp:TextBox>
+							<asp:Button ID="Button1" runat="server" Text="提交留言" OnClick="Button1_Click" OnClientClick="cs()" CssClass="aaaaa" />
+						</div>
+
+						<span style="margin-left: 60px; font-size:18px;">培洛科技支付宝账号</span>
+						<span style="margin-left: 505px; font-size:18px;">培洛科技微信公众账号</span>
+					</div>
+
+				</div>
+
+				<div class="contact_img" style="width: 1140px; margin: 0 auto; clear: both; height: 280px;">
+					<div class="zhifubao">
+						<img src="images/122.jpg" width="280" height="280" style="float: left; position: relative;">
+
+						<img src="images/123.jpg" width="280" height="280" style="margin-left: 400px; float: left;">
+					</div>
+				</div>
+				<br />
+
+				<div class="footer">
+					<div class="container">
+						<div class="footer-main">
+							<div class="col-md-4 ftr-grid">
+								<div class="ftr-grid-left">
+									<img src="images/location.png" alt="" style="margin-left:5px;">
+								</div>
+								<div class="ftr-grid-right">
+									<p>无锡市惠山区钱桥<span class="local">育才路27号</span></p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="col-md-4 ftr-grid">
+								<div class="ftr-grid-left">
+									<img src="images/email.png" alt="" style="margin-left:5px;">
+								</div>
+								<div class="ftr-grid-right">
+									<p>
+										baconlocke@163.com<span class="local">培洛科技</span>
+									</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="col-md-4 ftr-grid">
+								<div class="ftr-grid-left">
+									<img src="images/phone.png" alt="" style="margin-left:5px" ;>
+								</div>
+								<div class="ftr-grid-right">
+									<p>400-878-4867<span class="local"></span></p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+				<!--footer end here-->
+				<!--copyright start here-->
+				<div class="copyright">
+					<div class="container">
+						<div class="copyright-main">
+							<p>
+								Copyright &copy; 2016.Baconlocke All rights reserved.
+								<a target="_blank" href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action" style="color: #2d598a;">培洛科技&nbsp;&nbsp;&nbsp;苏ICP备16037756号</a>
+							</p>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

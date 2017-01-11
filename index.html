@@ -14,24 +14,31 @@
     <link href="css/animate2.css" rel="stylesheet">
     <link href="css/photo.css" rel="stylesheet">
 
+    <link href="css/basese.css" rel="stylesheet" />
+    <link href="css/blocke.css" rel="stylesheet" />
+    <link href="css/ziti.css" rel="stylesheet" />
+
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
+
+    <script src="js/new.js"></script>
     <!--<script src="js/counTo.js"></script>-->
     <script type="text/javascript" src="js/jquery.countUp.js"></script>
 
+    <script src="js/borjer.js"></script>
 </head>
 
 <body>
 <div class="container-fluid">
     <!--video start-->
-    <div class="video-box">
+    <!--<div class="video-box">
         <div class="video-inner">
             <div class="close-i">
                 <i class="glyphicon glyphicon-off" title="关闭视频"></i>
             </div>
         </div>
-    </div>
+    </div>-->
     
     <!--nav  start-->
     <div class= "navbar-example">
@@ -48,12 +55,12 @@
                 <div class="home navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="index.html" class="index">首页</a></li>
-                        <li><a href="products.html" target="_blank" class="products">产品</a></li>
-                        <li><a href="">案例</a></li>
-                        <li><a href="">下载</a></li>
-                        <li><a href="">会员</a></li>
-                        <li><a href="">帮助</a></li>
-                        <li><a href="">联系我们</a></li>
+                        <li><a href="anli.html" target="_blank">案例</a></li>
+                        <li><a href="text.html" target="_blank">演示</a></li>
+                        <li><a href="download.html" target="_blank">下载</a></li>
+                        <li><a href="vip.html" target="_blank">会员</a></li>
+                        <li><a href="help.html" target="_blank">帮助</a></li>
+                        <li><a href="contact.html" target="_blank">联系我们</a></li>
                     </ul>
                 </div>
             </div>
@@ -71,123 +78,375 @@
                             <h2 class="banner-h2">培洛科技，不一样的学习方式...</h2>
                         </div>
                     </div>
+                    <div class="big">
+                        <div class="one-row active">
+                            <img src="images/1.png" alt="唯一" title="全行业唯一">
+                            <span>全行业唯一：原笔迹书写体验</span>
+                        </div>
+                        <div class="two-row">
+                            <img src="images/1.png" alt="唯一" title="全行业唯一">
+                            <span>全行业唯一：解答富文本音频</span>
+                        </div>
+                        <div class="three-row">
+                            <img src="images/1.png" alt="唯一" title="全行业唯一">
+                            <span>全行业唯一：解题导向微视频</span>
+                        </div>
+                        <div class="four-row">
+                            <img src="images/1.png" alt="唯一" title="全行业唯一">
+                            <span>全行业唯一：在线离线双模式</span>
+                        </div>
+                        <div class="five-row">
+                            <img src="images/1.png" alt="唯一" title="全行业唯一">
+                            <span>全行业唯一：主动式错题规划</span>
+                        </div>
+                        <div class="six-row">
+                            <img src="images/1.png" alt="唯一" title="全行业唯一">
+                            <span>全行业唯一：做题过程全纪录</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="page-content">
                 <div class="container">
-                    <div class="cont-title">
+                    <div class="box-content">
                         <h2 class="count-h2">产品特性</h2>
+                        <span class="count-a"><a href="products.html">点击了解更多详情</a></span>
+                        <ul class="content-list clearfix">
+                            <li class="content-item content-item-book ml-0">
+                                <h2 class="content-tltle">纸质书写体验</h2>
+                                <div class="li-warp">
+                                    <ul class="item-list clearfix">
+                                        <li>
+                                            <h4 class="item-name">512级压感,纸质书写体验</h4>
+                                            <p class="item-desc">
+                                                在平板上也能练就一手好书法。
+                                            </p>
+                                            <div class="item-figure">
+                                                <img src="images/shuxie/c-3.jpg" />
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h4 class="item-name">12英寸面板,更大书写区域</h4>
+                                            <p class="item-desc">
+                                                尽情的在平板上书写你的梦想。
+                                            </p>
+                                            <div class="item-figure">
+                                                <img src="images/shuxie/size.png" />
+                                            </div>
+                                        </li>
+                                        <li class="item-more">
+                                            <h4 class="item-name">末端橡皮擦,更方便快捷</h4>
+                                            <p class="item-desc">
+                                                写错了也有再来一次的机会放心的去书写吧。
+                                            </p>
+                                            <img src="images/shuxie/rubber.png" class="thumb" />
+                                        </li>
+                                    </ul>
+                                    <div class="xm-pagers-wrapper">
+                                        <ul class="xm-pagers1">
+                                            <li class="pager pager-active ite1">
+                                                <span class="dot ">1</span>
+                                            </li>
+                                            <li class="pager ite2">
+                                                <span class="dot">2</span>
+                                            </li>
+                                            <li class="pager ite3">
+                                                <span class="dot">3</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="pagers-controls">
+                                        <a href="javascript:;" class="control-left iconfont">&#xe611;</a>
+                                        <a href="javascript:;" class="control-right iconfont">&#xe502;</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="content-item content-item-theme xm-carousel-container">
+                                <h2 class="content-tltle1">全程学习监督</h2>
+                                <div class="li-warp">
+                                    <ul class="item-list1 clearfix">
+                                        <li>
+                                            <h4 class="item-name">字迹是否书写工整？</h4>
+                                            <p class="item-desc">
+                                                培洛致力于改善您孩子的书写字迹。
+                                            </p>
+                                            <div class="item-figure">
+                                                <img src="images/jiandu/1.jpg" />
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h4 class="item-name">发音是否标准？</h4>
+                                            <p class="item-desc">
+                                                培洛致力于改善您孩子的英文发音标准。
+                                            </p>
+                                            <div class="item-figure">
+                                                <img src="images/jiandu/2.jpg" />
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h4 class="item-name">过程是否符合规范？</h4>
+                                            <p class="item-desc">
+                                                培洛致力于改善您孩子的做题规范。
+                                            </p>
+                                            <div class="item-figure">
+                                                <img src="images/jiandu/3.jpg" />
+                                            </div>
+                                        </li>
+                                        <li class="item-more">
+                                            <h4 class="item-name">做错是否认真听讲？</h4>
+                                            <p class="item-desc">
+                                                培洛致力于改善您孩子的纠错能力。
+                                            </p>
+                                            <img src="images/jiandu/4.jpg" class="thumb" />
+                                        </li>
+                                    </ul>
+                                    <div class="xm-pagers-wrapper">
+                                        <ul class="xm-pagers1">
+                                            <li class="pager pager-active ite4">
+                                                <span class="dot ">1</span>
+                                            </li>
+                                            <li class="pager ite5">
+                                                <span class="dot">2</span>
+                                            </li>
+                                            <li class="pager ite6">
+                                                <span class="dot">3</span>
+                                            </li>
+                                            <li class="pager ite7">
+                                                <span class="dot">3</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="pagers-controls">
+                                        <a href="javascript:;" class="control-left1 iconfont">&#xe611;</a>
+                                        <a href="javascript:;" class="control-right1 iconfont">&#xe502;</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="content-item content-item-game xm-carousel-container">
+                                <h2 class="content-tltle2">解答又好又快</h2>
+                                <div class="li-warp">
+                                    <ul class="item-list2 clearfix">
+                                        <li>
+                                            <h4 class="item-name">富文本</h4>
+                                            <p class="item-desc">
+                                                详细的解释搭配上立体的图片， 让您的孩子爱上做题。
+                                            </p>
+                                            <div class="item-figure">
+                                                <img src="images/jieda/movie.png" />
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h4 class="item-name">录音讲解</h4>
+                                            <p class="item-desc">
+                                                课堂上只有一次听讲解的机会， 培洛可以给您的孩子更多次。
+                                            </p>
+                                            <div class="item-figure">
+                                                <img src="images/jieda/pic.png" />
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h4 class="item-name">微视频</h4>
+                                            <p class="item-desc">
+                                                更生动形象的视频讲解 培洛为您的孩子顷情奉上。
+                                            </p>
+                                            <div class="item-figure">
+                                                <img src="images/jieda/sound.png" />
+                                            </div>
+                                        </li>
+                                        <li class="item-more">
+                                            <h4 class="item-name">个性化留言</h4>
+                                            <p class="item-desc">
+                                                遇到不会的题目怎么办? 培洛与您的孩子之间有特殊的沟通桥梁！
+                                            </p>
+                                            <img class="thumb" src="images/jieda/text.png" />
+                                        </li>
+                                    </ul>
+                                    <div class="xm-pagers-wrapper">
+                                        <ul class="xm-pagers1">
+                                            <li class="pager pager-active ite8">
+                                                <span class="dot ">1</span>
+                                            </li>
+                                            <li class="pager ite9">
+                                                <span class="dot">2</span>
+                                            </li>
+                                            <li class="pager ite10">
+                                                <span class="dot">3</span>
+                                            </li>
+                                            <li class="pager ite11">
+                                                <span class="dot">3</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="pagers-controls">
+                                        <a href="javascript:;" class="control-left2 iconfont">&#xe611;</a>
+                                        <a href="javascript:;" class="control-right2 iconfont">&#xe502;</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="content-item content-item-app xm-carousel-container">
+                                <h2 class="content-tltle3">高效学习规划</h2>
+                                <div class="li-warp">
+                                    <ul class="item-list3 clearfix">
+                                        <li>
+                                            <h4 class="item-name">科学规划</h4>
+                                            <p class="item-desc">
+                                                艾宾浩斯在1885年的时候发现了"遗忘速度是不均衡的"，并制作了著名的"艾宾浩斯遗忘曲线"。
+                                            </p>
+                                            <div class="item-figure">
+                                                <img src="images/guihua/quxian.png" />
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h4 class="item-name">主动出击</h4>
+                                            <p class="item-desc">
+                                                培洛依据记忆曲线，并优化算法，我们珍惜学生的每一分时间，确保时间都花在刀刃上。
+                                            </p>
+                                            <div class="item-figure">
+                                                <img src="images/guihua/wrong-3.jpg">
+                                            </div>
+                                        </li>
+                                        <li class="item-more">
+                                            <h4 class="item-name">专项练习</h4>
+                                            <p class="item-desc">
+                                                当学生做错习题后，我们定位到是因为某个知识点没掌握牢固，则会推送该知识点的学习任务。
+                                            </p>
+                                            <img class="thumb" src="images/guihua/yasi.jpg" />
+                                        </li>
+                                    </ul>
+                                    <div class="xm-pagers-wrapper">
+                                        <ul class="xm-pagers1">
+                                            <li class="pager pager-active ite12">
+                                                <span class="dot ">1</span>
+                                            </li>
+                                            <li class="pager ite13">
+                                                <span class="dot">2</span>
+                                            </li>
+                                            <li class="pager ite14">
+                                                <span class="dot">3</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="pagers-controls">
+                                        <a href="javascript:;" class="control-left3 iconfont">&#xe611;</a>
+                                        <a href="javascript:;" class="control-right3 iconfont">&#xe502;</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-3 cont cont-left">
-                            <div class="cont-inner">
-                                <div class="top-text">产品特性</div>
-                                <img src="icon/write.png" class="icon">
-                                <p style="margin-top: 50px">书写体验</p>
-                                <!--<div class="box">-->
-                                    <!--<img class="box-scale" src="images/1.png" alt="全行业唯一">-->
-                                    <!--<p class="box-text box-text-o">全行业唯一家：</p>-->
-                                <!--</div>-->
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-3 cont cont-mid">
-                            <div class="cont-inner">
-                                <div class="top-text">产品特性</div>
-                                <img src="icon/answer.png" class="icon">
-                                <p style="margin-top: 50px">立体解答</p>
-                                <!--<div class="box">-->
-                                    <!--<div class="carousel slide text" data-ride="carousel">-->
-                                        <!--<div class="carousel-inner" role="listbox">-->
-                                            <!--<div class="item active">-->
-                                                <!--<p class="box-text">原笔迹书写体验</p>-->
-                                            <!--</div>-->
-                                            <!--<div class="item">-->
-                                                <!--<p class="box-text">解答富文本+音频</p>-->
-                                            <!--</div>-->
-                                            <!--<div class="item">-->
-                                                <!--<p class="box-text">解题导向微视频</p>-->
-                                            <!--</div>-->
-                                            <!--<div class="item">-->
-                                                <!--<p class="box-text">在线离线双模式</p>-->
-                                            <!--</div>-->
-                                            <!--<div class="item">-->
-                                                <!--<p class="box-text">主动式错题规划</p>-->
-                                            <!--</div>-->
-                                            <!--<div class="item">-->
-                                                <!--<p class="box-text">做题过程全纪录</p>-->
-                                            <!--</div>-->
-                                        <!--</div>-->
-                                    <!--</div>-->
-                                <!--</div>-->
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-3 cont cont-midd">
-                            <div class="cont-inner">
-                                <div class="top-text">产品特性</div>
-                                <img src="icon/teacher.png" class="icon">
-                                <p style="margin-top: 50px">学习监督</p>
-                                <!--<div class="box">-->
-                                    <!--<div class="carousel slide text" data-ride="carousel">-->
-                                        <!--<div class="carousel-inner" role="listbox">-->
-                                            <!--<div class="item">-->
-                                                <!--<p class="box-text">原笔迹书写体验</p>-->
-                                            <!--</div>-->
-                                            <!--<div class="item active">-->
-                                                <!--<p class="box-text">解答富文本+音频</p>-->
-                                            <!--</div>-->
-                                            <!--<div class="item">-->
-                                                <!--<p class="box-text">解题导向微视频</p>-->
-                                            <!--</div>-->
-                                            <!--<div class="item">-->
-                                                <!--<p class="box-text">在线离线双模式</p>-->
-                                            <!--</div>-->
-                                            <!--<div class="item">-->
-                                                <!--<p class="box-text">主动式错题规划</p>-->
-                                            <!--</div>-->
-                                            <!--<div class="item">-->
-                                                <!--<p class="box-text">做题过程全纪录</p>-->
-                                            <!--</div>-->
-                                        <!--</div>-->
-                                    <!--</div>-->
-                                <!--</div>-->
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-3 cont cont-right">
-                            <div class="cont-inner">
-                                <div class="top-text">产品特性</div>
-                                <img src="icon/plan.png" class="icon">
-                                <p style="margin-top: 50px">高效规划</p>
-                                <!--<div class="box">-->
-                                    <!--<div class="carousel slide text" data-ride="carousel">-->
-                                        <!--<div class="carousel-inner" role="listbox">-->
-                                            <!--<div class="item">-->
-                                                <!--<p class="box-text">原笔迹书写体验</p>-->
-                                            <!--</div>-->
-                                            <!--<div class="item">-->
-                                                <!--<p class="box-text">解答富文本+音频</p>-->
-                                            <!--</div>-->
-                                            <!--<div class="item active">-->
-                                                <!--<p class="box-text">解题导向微视频</p>-->
-                                            <!--</div>-->
-                                            <!--<div class="item">-->
-                                                <!--<p class="box-text">在线离线双模式</p>-->
-                                            <!--</div>-->
-                                            <!--<div class="item">-->
-                                                <!--<p class="box-text">主动式错题规划</p>-->
-                                            <!--</div>-->
-                                            <!--<div class="item">-->
-                                                <!--<p class="box-text">做题过程全纪录</p>-->
-                                            <!--</div>-->
-                                        <!--</div>-->
-                                    <!--</div>-->
-                                <!--</div>-->
-                            </div>
-                        </div>
-                    </div>
+                    <!--<div class="cont-title">-->
+                        <!--<h2 class="count-h2">产品特性</h2>-->
+                    <!--</div>-->
+                    <!--<div class="row">-->
+                        <!--<div class="col-xs-12 col-sm-12 col-md-3 cont cont-left">-->
+                            <!--<div class="cont-inner">-->
+                                <!--<div class="top-text">产品特性</div>-->
+                                <!--<img src="icon/write.png" class="icon">-->
+                                <!--<p style="margin-top: 50px">书写体验</p>-->
+                                <!--&lt;!&ndash;<div class="box">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<img class="box-scale" src="images/1.png" alt="全行业唯一">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<p class="box-text box-text-o">全行业唯一家：</p>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-xs-12 col-sm-12 col-md-3 cont cont-mid">-->
+                            <!--<div class="cont-inner">-->
+                                <!--<div class="top-text">产品特性</div>-->
+                                <!--<img src="icon/answer.png" class="icon">-->
+                                <!--<p style="margin-top: 50px">立体解答</p>-->
+                                <!--&lt;!&ndash;<div class="box">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<div class="carousel slide text" data-ride="carousel">&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<div class="carousel-inner" role="listbox">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<div class="item active">&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<p class="box-text">原笔迹书写体验</p>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<div class="item">&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<p class="box-text">解答富文本+音频</p>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<div class="item">&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<p class="box-text">解题导向微视频</p>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<div class="item">&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<p class="box-text">在线离线双模式</p>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<div class="item">&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<p class="box-text">主动式错题规划</p>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<div class="item">&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<p class="box-text">做题过程全纪录</p>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-xs-12 col-sm-12 col-md-3 cont cont-midd">-->
+                            <!--<div class="cont-inner">-->
+                                <!--<div class="top-text">产品特性</div>-->
+                                <!--<img src="icon/teacher.png" class="icon">-->
+                                <!--<p style="margin-top: 50px">学习监督</p>-->
+                                <!--&lt;!&ndash;<div class="box">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<div class="carousel slide text" data-ride="carousel">&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<div class="carousel-inner" role="listbox">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<div class="item">&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<p class="box-text">原笔迹书写体验</p>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<div class="item active">&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<p class="box-text">解答富文本+音频</p>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<div class="item">&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<p class="box-text">解题导向微视频</p>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<div class="item">&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<p class="box-text">在线离线双模式</p>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<div class="item">&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<p class="box-text">主动式错题规划</p>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<div class="item">&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<p class="box-text">做题过程全纪录</p>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-xs-12 col-sm-12 col-md-3 cont cont-right">-->
+                            <!--<div class="cont-inner">-->
+                                <!--<div class="top-text">产品特性</div>-->
+                                <!--<img src="icon/plan.png" class="icon">-->
+                                <!--<p style="margin-top: 50px">高效规划</p>-->
+                                <!--&lt;!&ndash;<div class="box">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<div class="carousel slide text" data-ride="carousel">&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<div class="carousel-inner" role="listbox">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<div class="item">&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<p class="box-text">原笔迹书写体验</p>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<div class="item">&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<p class="box-text">解答富文本+音频</p>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<div class="item active">&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<p class="box-text">解题导向微视频</p>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<div class="item">&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<p class="box-text">在线离线双模式</p>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<div class="item">&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<p class="box-text">主动式错题规划</p>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<div class="item">&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<p class="box-text">做题过程全纪录</p>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
                 </div>
-                <div class="container">
-                    <iframe src="new.html" class="new-iframe" frameborder="0"></iframe>
-                </div>
+                <!--<div class="container">-->
+                    <!--<iframe src="new.html" class="new-iframe" frameborder="0"></iframe>-->
+                <!--</div>-->
             </div>
             <div class="photo container-fluid">
                 <div class="row" style="height: 100%">
@@ -199,50 +458,52 @@
                                     <li>家长助手</li>
                                     <li>机构辅助</li>
                                 </ol>
-                                <a href="photoindex.html" target="_Blank" style="margin-left: 30px">点击了解更多</a>
+                                <a href="anli.html" target="_Blank" style="margin-left: 30px">点击了解更多</a>
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-8 pright" style="padding: 0;">
                             <div class="video-player">
-                                <div class="w-video" title="点击观看视频">
-                                    <a href="javascript:;" >
+                                <div class="w-video" title="点击查看详情">
+                                    <a href="text.html" target="_Blank">
                                         <i class="icon-play2"></i>
                                     </a>
                                 </div>
                             </div>
                             <div class="pright-img container-fluid">
                                 <div class="row" style="height: 50%">
-                                    <div class="item col-xs-12 col-md-6" style="background-image: url(photo/c-2.JPG); padding: 0"></div>
-                                    <div class="item col-xs-12 col-md-6" style="background-image: url(photo/c-3.JPG); padding: 0"></div>
+                                    <div class="item col-xs-12 col-md-6" style="background-image: url(images/pic4.JPG); padding: 0"></div>
+                                    <div class="item col-xs-12 col-md-6" style="background-image: url(images/c-3.JPG); padding: 0"></div>
                                 </div>
                                 <div class="row" style="height:50%">
-                                    <div class="item col-xs-12 col-md-6" style="background-image: url(photo/c-13.JPG); padding: 0"></div>
-                                    <div class="item col-xs-12 col-md-6" style="background-image: url(photo/c-15.JPG); padding: 0"></div>
+                                    <div class="item col-xs-12 col-md-6" style="background-image: url(images/pic29.JPG); padding: 0"></div>
+                                    <div class="item col-xs-12 col-md-6" style="background-image: url(images/pic12.JPG); padding: 0"></div>
                                 </div>
                             </div>
                         </div>
                 </div>
             </div>
-            <div class="page-count container">
-                <div class="row">
-                    <div class="col-xs-12 col-md-12 txt-cen animate-box fadeInUp animated">
-                        <div class="count-heading">
-                            <h2 class="count-h2" style="color: black;margin-top: 80px">数据共享</h2>
+            <div class="page-count">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12 txt-cen animate-box fadeInUp animated">
+                            <div class="count-heading">
+                                <h2 class="count-h2" style="color: black;margin-top: 80px">数据共享</h2>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row" style="padding-top: 20px">
-                    <div class="col-xs-12 col-md-4 txt-cen">
-                        <div class="timer set-style">446</div>
-                        <p class="count-label">学生人数</p>
-                    </div>
-                    <div class="col-xs-12 col-md-4 txt-cen">
-                        <div class="timer set-style">500000</div>
-                        <span class="count-label">精品题库</span>
-                    </div>
-                    <div class="col-xs-12 col-md-4 txt-cen">
-                        <div class="timer set-style">1000000</div>
-                        <span class="count-label">学习数据</span>
+                    <div class="row" style="padding-top: 20px">
+                        <div class="col-xs-12 col-md-4 txt-cen">
+                            <div class="timer set-style">446</div>
+                            <p class="count-label">学生人数</p>
+                        </div>
+                        <div class="col-xs-12 col-md-4 txt-cen">
+                            <div class="timer set-style">500000</div>
+                            <span class="count-label">精品题库</span>
+                        </div>
+                        <div class="col-xs-12 col-md-4 txt-cen">
+                            <div class="timer set-style">1000000</div>
+                            <span class="count-label">学习数据</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -261,15 +522,15 @@
 </body>
 </html>
 <script>
-
-    $(".icon-play2").click(function(){
-        $(".video-box .video-inner").append("<video src='video/VideoJoiner161123142936.mp4' controls='controls'>your browser does not support the video tag</video>");
-        $(".video-box").show();
-    });
-    $(".video-inner .close-i").click(function(){
-        $(".video-inner video").remove();
-        $('.video-box').hide();
-    });
+//
+//  $(".icon-play2").click(function(){
+//      $(".video-box .video-inner").append("<video src='video/VideoJoiner161123142936.mp4' controls='controls'>your browser does not support the video tag</video>");
+//      $(".video-box").show();
+//  });
+//  $(".video-inner .close-i").click(function(){
+//      $(".video-inner video").remove();
+//      $('.video-box').hide();
+//  });
     $(window).resize(function(){
         $(".video-box").css({
             width:$(window).width(),
