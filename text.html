@@ -1,293 +1,292 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
+<head>
 
-	<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>演示</title>
+    <link href="icon/icon.ico" rel="shortcut icon">
 
-		<title>演示</title>
-		<link href="icon/icon.ico" rel="shortcut icon">
+    <link href="css/jq22.css" rel="stylesheet">
 
-		<link href="css/jq22.css" rel="stylesheet">
+    <script src="js/jquery-3.1.1.min.js"></script>
 
-		<script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
-		<script src="js/bootstrap.min.js"></script>
+    <script>
+        //var loginFlag = false;
 
-		<script>
-			//var loginFlag = false;
+        //var loginHelper = null;
 
-			//var loginHelper = null;
+        $(document).ready(function () {
 
-			$(document).ready(function() {
+            $('.carousel').carousel(
 
-				$('.carousel').carousel(
+                {
 
-					{
+                    "pause": "true",
 
-						"pause": "false",
+                    "interval": false
 
-						"interval": 20000
+                }
 
-					}
+            );
 
-				);
+            $('.carousel').on('slide.bs.carousel', function (event) {
 
-				$('.carousel').on('slide.bs.carousel', function(event) {
+                var tag = $(event.relatedTarget).attr("tag");
 
-					var tag = $(event.relatedTarget).attr("tag");
+                var progress = $(event.relatedTarget).attr("progress");
 
-					var progress = $(event.relatedTarget).attr("progress");
+                $('#img_home').attr("src", "images/home.png");
 
-					$('#img_home').attr("src", "images/home.png");
+                $('#img_intro').attr("src", "images/intro.png");
 
-					$('#img_intro').attr("src", "images/intro.png");
+                $('#img_gift').attr("src", "images/gift.png");
 
-					$('#img_gift').attr("src", "images/gift.png");
+                $('#img_feedback').attr("src", "images/feedback.png");
 
-					$('#img_feedback').attr("src", "images/feedback.png");
+                $('#img_related').attr("src", "images/related.png");
 
-					$('#img_related').attr("src", "images/related.png");
+                $('#img_' + tag).attr("src", "images/" + tag + "_selected.png");
 
-					$('#img_' + tag).attr("src", "images/" + tag + "_selected.png");
+                //$("#progress").width(progress + "px");
 
-					//$("#progress").width(progress + "px");
+                //$("#progress").css('left', (progress / 2) - 400 + "px");
 
-					//$("#progress").css('left', (progress / 2) - 400 + "px");
+                $("#progress").animate({
+                    width: progress,
+                    left: (progress / 2) - 400
+                }, 500);
 
-					$("#progress").animate({
-						width: progress,
-						left: (progress / 2) - 400
-					}, 500);
+                playAnimation(tag);
 
-					playAnimation(tag);
+            });
 
-				});
+            $("body,html").animate({
 
-				$("body,html").animate({
+                scrollTop: ($("#lanrenzhijia_home .splash-container").offset().top)
 
-					scrollTop: ($("#lanrenzhijia_home .splash-container").offset().top)
+            }, 10);
 
-				}, 10);
+            playAnimation("home");
 
-				playAnimation("home");
+        });
 
-			});
+        function switchlanrenzhijia(lanrenzhijiaIndex) {
 
-			function switchlanrenzhijia(lanrenzhijiaIndex) {
+            $('.carousel').carousel(lanrenzhijiaIndex);
 
-				$('.carousel').carousel(lanrenzhijiaIndex);
+        }
 
-			}
+        function playAnimation(tag) {
 
-			function playAnimation(tag) {
+            var ani1 = $("#lanrenzhijia_" + tag + " .ani_step_1");
 
-				var ani1 = $("#lanrenzhijia_" + tag + " .ani_step_1");
+            var ani2 = $("#lanrenzhijia_" + tag + " .ani_step_2");
 
-				var ani2 = $("#lanrenzhijia_" + tag + " .ani_step_2");
+            var ani3 = $("#lanrenzhijia_" + tag + " .ani_step_3");
 
-				var ani3 = $("#lanrenzhijia_" + tag + " .ani_step_3");
+            var pre_start = ((tag == "home") ? 0 : 300);
 
-				var pre_start = ((tag == "home") ? 0 : 300);
+            if (ani1 != null) {
 
-				if(ani1 != null) {
+                ani1.css("opacity", 0);
 
-					ani1.css("opacity", 0);
+                setTimeout(function () {
 
-					setTimeout(function() {
+                    ani1.animate({
+                        opacity: 1
+                    }, 1000);
 
-						ani1.animate({
-							opacity: 1
-						}, 1000);
+                }, 10 + pre_start);
 
-					}, 10 + pre_start);
+            }
 
-				}
+            if (ani2 != null) {
 
-				if(ani2 != null) {
+                ani2.css("opacity", 0);
 
-					ani2.css("opacity", 0);
+                setTimeout(function () {
 
-					setTimeout(function() {
+                    ani2.animate({
+                        opacity: 1
+                    }, 1000);
 
-						ani2.animate({
-							opacity: 1
-						}, 1000);
+                }, 1500 + pre_start);
 
-					}, 1500 + pre_start);
+            }
 
-				}
+            if (ani3 != null) {
 
-				if(ani3 != null) {
+                ani3.css("opacity", 0);
 
-					ani3.css("opacity", 0);
+                setTimeout(function () {
 
-					setTimeout(function() {
+                    $("#lanrenzhijia_" + tag + " .ani_step_3").animate({
+                        opacity: 1
+                    }, 1000);
 
-						$("#lanrenzhijia_" + tag + " .ani_step_3").animate({
-							opacity: 1
-						}, 1000);
+                }, 3000 + pre_start);
 
-					}, 3000 + pre_start);
+            }
 
-				}
+        }
+    </script>
 
-			}
-		</script>
+</head>
 
-	</head>
+<body>
 
-	<body>
+    <div id="carousel_container" class="carousel slide full_height">
 
-		<div id="carousel_container" class="carousel slide full_height">
+        <div class="carousel-inner full_height">
 
-			<div class="carousel-inner full_height">
+            <div id="lanrenzhijia_home" class="lanrenzhijia item active" tag="home" progress="150">
 
-				<div id="lanrenzhijia_home" class="lanrenzhijia item active" tag="home" progress="150">
+                <div id="main">
 
-					<div id="main">
+                    <div id="splash">
 
-						<div id="splash">
+                        <div class="container splash-container">
+                            <iframe src="slider1.html" class="new-iframe" frameborder="0"></iframe>
+                        </div>
 
-							<div class="container splash-container">
-								<iframe src="slider1.html" class="new-iframe" frameborder="0"></iframe>
-							</div>
+                    </div>
 
-						</div>
+                </div>
 
-					</div>
+            </div>
 
-				</div>
+            <div id="lanrenzhijia_intro" class="lanrenzhijia item" tag="intro" progress="300">
 
-				<div id="lanrenzhijia_intro" class="lanrenzhijia item" tag="intro" progress="300">
+                <div id="main">
 
-					<div id="main">
+                    <div id="splash" class="ani_step_1">
+                        <iframe src="slider2.html" class="new-iframe" frameborder="0"></iframe>
+                    </div>
 
-						<div id="splash" class="ani_step_1">
-							<iframe src="slider2.html" class="new-iframe" frameborder="0"></iframe>
-						</div>
+                </div>
 
-					</div>
+            </div>
 
-				</div>
+            <div id="lanrenzhijia_gift" class="lanrenzhijia item" tag="gift" progress="450">
 
-				<div id="lanrenzhijia_gift" class="lanrenzhijia item" tag="gift" progress="450">
+                <div id="main">
 
-					<div id="main">
+                    <div id="splash">
+                        <iframe src="slider3.html" class="new-iframe" frameborder="0"></iframe>
+                    </div>
 
-						<div id="splash">
-							<iframe src="slider3.html" class="new-iframe" frameborder="0"></iframe>
-						</div>
+                </div>
+            </div>
 
-					</div>
-				</div>
+            <div id="lanrenzhijia_feedback" class="lanrenzhijia item" tag="feedback" progress="600">
 
-				<div id="lanrenzhijia_feedback" class="lanrenzhijia item" tag="feedback" progress="600">
+                <div id="main">
 
-					<div id="main">
+                    <div id="splash">
 
-						<div id="splash">
+                        <iframe src="slider4.html" class="new-iframe" frameborder="0"></iframe>
+                    </div>
 
-							<iframe src="slider4.html" class="new-iframe" frameborder="0"></iframe>
-						</div>
+                </div>
 
-					</div>
+            </div>
 
-				</div>
+            <div id="lanrenzhijia_related" class="lanrenzhijia item" tag="related" progress="750">
 
-				<div id="lanrenzhijia_related" class="lanrenzhijia item" tag="related" progress="750">
+                <div id="main">
 
-					<div id="main">
+                    <div id="splash" class="ani_step_1">
+                        <iframe src="slider5.html" class="new-iframe" frameborder="0"></iframe>
+                    </div>
 
-						<div id="splash" class="ani_step_1">
-							<iframe src="slider5.html" class="new-iframe" frameborder="0"></iframe>
-						</div>
+                </div>
 
-					</div>
+            </div>
 
-				</div>
+        </div>
 
-			</div>
+    </div>
 
-		</div>
+    <div class="footer">
 
-		<div class="footer">
+        <div id="navbar">
 
-			<div id="navbar">
+            <div id="dash"></div>
 
-				<div id="dash"></div>
+            <div id="progress"></div>
 
-				<div id="progress"></div>
+            <div id="navbtns" class="container">
 
-				<div id="navbtns" class="container">
+                <div class="navbtn">
 
-					<div class="navbtn">
+                    <a href="javascript:switchlanrenzhijia(0)">
 
-						<a href="javascript:switchlanrenzhijia(0)">
+                        <img id="img_home" src="images/home_selected.png" alt="Home">
 
-							<img id="img_home" src="images/home_selected.png" alt="Home">
+                        <div>Home</div>
 
-							<div>Home</div>
+                    </a>
 
-						</a>
+                </div>
 
-					</div>
+                <div class="navbtn">
 
-					<div class="navbtn">
+                    <a href="javascript:switchlanrenzhijia(1)">
 
-						<a href="javascript:switchlanrenzhijia(1)">
+                        <img id="img_intro" src="images/intro.png" alt="家长留言">
 
-							<img id="img_intro" src="images/intro.png" alt="家长留言">
+                        <div>家长留言</div>
 
-							<div>家长留言</div>
+                    </a>
 
-						</a>
+                </div>
 
-					</div>
+                <div class="navbtn">
 
-					<div class="navbtn">
+                    <a href="javascript:switchlanrenzhijia(2)">
 
-						<a href="javascript:switchlanrenzhijia(2)">
+                        <img id="img_gift" src="images/gift.png" alt="精美礼品">
 
-							<img id="img_gift" src="images/gift.png" alt="精美礼品">
+                        <div>精美礼品</div>
 
-							<div>精美礼品</div>
+                    </a>
 
-						</a>
+                </div>
 
-					</div>
+                <div class="navbtn">
 
-					<div class="navbtn">
+                    <a href="javascript:switchlanrenzhijia(3)">
 
-						<a href="javascript:switchlanrenzhijia(3)">
+                        <img id="img_feedback" src="images/feedback.png" alt="会员相册">
 
-							<img id="img_feedback" src="images/feedback.png" alt="会员相册">
+                        <div>会员相册</div>
 
-							<div>会员相册</div>
+                    </a>
 
-						</a>
+                </div>
 
-					</div>
+                <div class="navbtn">
 
-					<div class="navbtn">
+                    <a href="javascript:switchlanrenzhijia(4)">
 
-						<a href="javascript:switchlanrenzhijia(4)">
+                        <img id="img_related" src="images/related.png" alt="视频中心">
 
-							<img id="img_related" src="images/related.png" alt="视频中心">
+                        <div>视频中心</div>
 
-							<div>视频中心</div>
+                    </a>
 
-						</a>
+                </div>
 
-					</div>
+            </div>
 
-				</div>
+        </div>
 
-			</div>
+    </div>
 
-		</div>
-
-	</body>
+</body>
 
 </html>

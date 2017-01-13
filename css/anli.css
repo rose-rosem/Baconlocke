@@ -983,7 +983,7 @@ h3.heading-section:before {
 }
 
 #fh5co-wrapper {
-  overflow-x: hidden;
+  overflow: hidden;
   position: relative;
 }
 
@@ -1241,3 +1241,18 @@ h3.heading-section:before {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+footer{
+    width:100%;
+    text-align: center;
+/*    background-color: gainsboro;*/
+    position: absolute;
+    bottom: 0;
+}
+
+.copy-right{
+    color: #999;
+    background-color: gainsboro;
+    font-size: 12px;
+    margin-top: 2%;
+}

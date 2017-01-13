@@ -22,7 +22,7 @@ body {
 }
 
 .grid figure img {
-	max-width: 100%;
+	max-width: 90%;
 	display: block;
 	position: relative;
 }
@@ -60,7 +60,7 @@ body {
 
 .cs-style-1 figcaption {
 	height: 100%;
-	width: 100%;
+	width: 90%;
 	opacity: 0;
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
@@ -70,15 +70,20 @@ body {
 	transition: transform 0.3s, opacity 0.3s;
 }
 
-.no-touch .cs-style-1 figure:hover figcaption,
-.cs-style-1 figure.cs-hover figcaption {
-	opacity: 1;
+.no-touch .cs-style-1 figure:hover figcaption{
+	opacity: .9;
 	-webkit-transform: translate(15px, 15px);
 	-moz-transform: translate(15px, 15px);
 	-ms-transform: translate(15px, 15px);
 	transform: translate(15px, 15px);
 }
-
+.no-touch .cs-style-1 figure:hover .figcaption2{
+	opacity: .9;
+	-webkit-transform: translate(-15px, 15px);
+	-moz-transform: translate(-15px, 15px);
+	-ms-transform: translate(-15px, 15px);
+	transform: translate(-15px, 15px);
+}
 .cs-style-1 figcaption h3 {
 	margin-top: 70px;
 }
@@ -427,17 +432,19 @@ body {
 	font-weight: bold;
 }
 
-
+.cs-style-1 figcaption p{
+	margin: 0 0 1.2% !important;
+}
 
 .color-g {
 	color:lightgreen;
 	font-weight: bold;
-	font-size: 23px !important;
+	font-size: 21px !important;
 }
 
 .colo-w{
 	color: #FFFFFF;
-	font-size: 19px !important;
+	font-size: 1.7rem !important;
 	text-indent:2em !important;
 }
 
